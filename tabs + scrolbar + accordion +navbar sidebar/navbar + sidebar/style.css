@@ -1,0 +1,113 @@
+body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a{
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}
+li{
+  list-style: none;
+}
+.container{
+width: 100%;
+height: 60px;
+background-color: rgb(211, 131, 34);
+display: flex;
+justify-content: space-between;
+}
+.logo{
+  line-height: 55px;
+  margin-left: 30px;
+  font-size: 20px;
+  color: white;
+}
+.logo a{
+  color: white;
+  font-weight: bold;
+}
+.ul-items{
+  display: flex;
+}
+.ul-items li{
+  padding: 0px 20px;
+  line-height: 25px;
+}
+.bar{
+  line-height: 55px;
+  margin-right: 30px;
+  color: white;
+  font-size: 25px;
+  display: none;
+
+}
+
+
+@media screen and (max-width: 1000px) {
+  .logo{
+    margin-left: 20px;
+}
+.ul-items li{
+  padding: 0px 15px;
+}
+}
+
+@media screen and (max-width: 886px) {
+  .logo{
+    margin-left: 10px;
+}
+.ul-items li{
+  padding: 0px 10px;
+}
+}
+@media screen and (max-width: 780px) {
+.bar{
+  display: block;
+}
+.logo{
+    margin-left: 10px;
+}
+.ul-items{
+  display: none;
+  
+}
+.ul-items.active{
+  display: block;
+  animation: slide-in 0.3s ease-in;
+}
+@keyframes slide-in {
+  0% {
+    transform: transLateX(-100%);
+   }
+   100% {
+    transform: transLateX(0%);
+   }
+}
+
+ .ul-items li{
+  padding: 0px 8px;
+  border-bottom: 1px solid;
+  padding: 10px;
+}
+.ul-items li a{
+  color:white;
+  font-size: 18px;
+}
+.ul-items{
+  width: 250px;
+  position:absolute;
+  top:43px;
+  left: 0px;
+  background-color: rgb(136, 78, 7);
+  padding-left: 0px;
+  text-align: center;
+  color: white;
+}
+.ul-items li:hover{
+  background-color: rgb(211, 131, 34);
+  cursor: pointer;
+  transition: background .5s;
+  border-bottom: 2px solid black;
+}
+}

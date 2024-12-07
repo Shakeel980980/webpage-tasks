@@ -1,0 +1,34 @@
+.tab{
+display: flex;
+}
+.tablinks{
+  font-size: 25px;
+  outline: none;
+  border: none;
+  background-color: #3f2d1d;
+  color: #F2EFEB;
+  content: "";
+  padding: 10px 30px;
+}
+.tablinks:hover{
+  background-color: rgb(209, 16, 16);
+  transition: background 0.3s;
+}
+.tabcontant{
+  width: 600px;
+  background-color: #594534;
+  color: #e9c4a5;;
+  padding: 5px 20px;
+  display: none;
+  font-size: 20px;
+}
+.tabcontant h2{
+  color: #f1d6c0;
+}
+.tabcontant.active{
+  display: block;
+}
+
+.tablinks.activeBtn{
+  background-color: red;;
+}
